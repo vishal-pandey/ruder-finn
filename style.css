@@ -1,0 +1,165 @@
+.green{
+	background-color: rgb(9, 165, 86);	
+	color: white;
+}
+.grey{
+	background-color: rgb(191, 190, 190);
+}
+.yellow{
+	background-color: rgb(255, 181, 67);
+	color: white;
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	height: 60px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header .box, .header .box-menu{
+	height: 100%;
+	width: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header .box{
+	background-color: rgb(255, 181, 67);
+}
+.header .box-menu{
+	background-color: rgb(9, 165, 86);
+	font-size: 30px;
+	color: white;
+}
+.header .site-title{
+	display: inline-block;
+	height: 100%;
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 15px;
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 28px;
+	border-bottom: 1px solid rgb(9, 165, 86);
+	background-color: white;
+}
+
+
+.section{
+	position: relative;
+}
+.section .bg{
+	width: 100%;
+	position: absolute;
+	height: 100vh;
+	top: 0;
+}
+.bottom-bar{
+	width: 100%;
+	border-right: 60px solid;
+	border-left: 60px solid;
+	border-color: #f2f2f2;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 0;
+	background-color: rgb(191, 190, 190);
+	height: 35px;
+}
+.left-bar{
+	width: 60px;
+	height: 180px;
+	position: absolute;
+	left: 0;
+	bottom: 135px;
+}
+.long-bar{
+	height: 270px;
+}
+
+
+
+.middle-block{
+	width: 50%;
+	height: 290px;
+	max-height: 50%;
+	position: absolute;
+	bottom: 100px;
+	right: 0;
+}
+
+
+
+.slide-number{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 100px;
+	right: 40px;
+	color: white;
+	font-size: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
+.bottom{
+	bottom: 0px;
+}
+.top{
+	top: 60px;
+}
+
+.close-menu{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	/*border: 1px solid white;*/
+}
+.full-page-menu{
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 2;
+	display: none;
+}
+
+#myMenu{
+	width: 100%;
+	list-style-type: none;
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	text-decoration: none;
+	/*border: 1px solid white;*/
+}
+
+#myMenu a{
+	color: white;
+}
+#myMenu .active{
+	text-decoration: underline;
+}
