@@ -36,6 +36,9 @@
 	font-size: 30px;
 	color: white;
 }
+.header .box-menu:hover{
+	cursor: pointer;
+}
 .header .site-title{
 	display: inline-block;
 	height: 100%;
@@ -126,6 +129,10 @@
 .spiral{
 	position: absolute;
 	animation: rotate 20s infinite linear;
+}
+
+.vector{
+	position: absolute;
 }
 
 

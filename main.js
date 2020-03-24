@@ -8,6 +8,18 @@ window.onload = ()=>{
 		autoScrolling:true,
 		fadingEffect: true,
 		menu: '#myMenu',
+		afterLoad: function(origin, destination, direction) {  
+	      var vs = document.querySelectorAll(".vector-img")
+	      for (var v of vs){
+	      	v.classList.add("visible")
+	      }
+		},
+		onLeave: function(origin, destination, direction) {  
+	      var vs = document.querySelectorAll(".vector-img")
+	      for (var v of vs){
+	      	v.classList.remove("visible")
+	      }
+		},
 	});
 
 	document.querySelector(".box-menu").addEventListener('click', ()=>{
@@ -36,6 +48,17 @@ window.onload = ()=>{
 
 	}
 
+	var vectors = document.querySelectorAll('.vector')
+
+	for (var vector of vectors){
+		vector.style.left = vector.dataset.left
+		vector.style.right = vector.dataset.right
+		vector.style.top = vector.dataset.top
+		vector.style.bottom = vector.dataset.bottom
+
+	}
+
 
 
 }
+
